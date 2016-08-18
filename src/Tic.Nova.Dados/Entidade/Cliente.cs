@@ -6,9 +6,21 @@ using Microsoft.WindowsAzure.Storage.Table;
 
 namespace Tic.Nova.Dados.Entidade
 {
+    public abstract class EntidadeBase : TableEntity
+    {
+        public static string NomeTabela = "cliente5";
+
+        public EntidadeBase()
+        {
+
+        }
+
+        internal abstract string GetNomeTabela();
+    }
+
     public class Cliente : TableEntity
     {
-        public static string NomeTabela = "Cliente5";
+        public static string NomeTabela = "cliente5";
 
         public Cliente() { }
 
