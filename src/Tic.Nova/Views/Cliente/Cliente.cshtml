@@ -1,0 +1,30 @@
+﻿@model Tic.Nova.Dados.Entidade.Cliente
+
+<h1>Detalhes do Cliente</h1>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            Nome
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt>
+            Email
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            Aprovado
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Aprovado)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Pesquisa">Pesquisar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>

@@ -1,0 +1,20 @@
+﻿@model Tic.Nova.Dados.Entidade.Cliente
+
+<h1>Pesquisar Cliente </h1>
+
+<form asp-action="ObterClientePorEmail">
+    <div>
+        <dl class="dl-horizontal">
+            <dt>
+                Email
+            </dt>
+            <dd>
+                <input asp-for="Email" class="form-control" />
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <input type="submit" value="Pesquisar" class="btn btn-default" /> |
+        <a asp-action="Index">Voltar</a>
+    </div>
+</form>

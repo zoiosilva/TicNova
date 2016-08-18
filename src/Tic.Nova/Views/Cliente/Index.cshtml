@@ -1,0 +1,26 @@
+﻿@model Tic.Nova.Dados.Entidade.Cliente
+
+<h1>Salvar dados do Cliente </h1>
+
+<form asp-action="Salvar">
+    <div>
+        <dl class="dl-horizontal">
+            <dt>
+                Nome
+            </dt>
+            <dd>
+                <input asp-for="Nome" class="form-control" required />
+            </dd>
+            <dt>
+                Email
+            </dt>
+            <dd>
+                <input asp-for="Email" class="form-control" required />
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <input type="submit" value="Salvar" class="btn btn-default" /> |
+        <a asp-action="Pesquisa">Pesquisar</a>
+    </div>
+</form>

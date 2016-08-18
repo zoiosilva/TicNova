@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "WindowsAzure.Storage": "7.2.0"
+  },
+
+  "frameworks": {
+    "net46": {}
+  }
+}
